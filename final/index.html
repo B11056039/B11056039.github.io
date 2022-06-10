@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" />
+    <span id="res"></span>
+    <script>
+        document.getElementById('res').textContent = window.innerWidth;
+
+        window.onresize = function() {
+            document.getElementById('res').textContent = window.innerWidth;
+        }
+    </script>
+    <style>
+        body {
+            background-color: #507ace;
+            color: #474747;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        header,
+        article,
+        aside,
+        footer {
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+        
+        @media(min-width:200x) {
+            body {
+                background-color: #059b4a;
+            }
+            article {
+                float: left;
+                width: 70%;
+            }
+            aside {
+                float: right;
+                width: 30%;
+            }
+            footer {
+                clear: both;
+            }
+            img {
+                width: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>響應式網頁實作</h1>
+        <p>隨便寫</p>
+        <p>有嗎</p>
+        <p>有改嗎</p>
+    </header>
+
+    <article>
+        <img src="https://pic.pimg.tw/funfunmeme/1621408698-3480647688-g_n.png" alt="封面照">
+
+        <h3>內文</h3>
+        <p>佈局會根據設備的尺寸和功能而改變，例如</p>
+        <h3>更多內容</h3>
+        <u1>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </u1>
+    </article>
+
+    <aside>
+        <h2>連假放假天</h2>
+
+        <nav>
+            <ul>
+                <li>4/1</li>
+                <li>4/2</li>
+                <li>4/3</li>
+                <li>4/4</li>
+                <li>4/5</li>
+            </ul>
+        </nav>
+    </aside>
+
+    <footer>結尾</footer>
+</body>
+
+</html>
