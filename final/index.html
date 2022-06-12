@@ -5,9 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>沒有眉毛才夠亞</title>
     <link rel="stylesheet" href="index.css" />
-    <span id="res"></span>
+    <!--span id="res"></span-->
     <script>
         document.getElementById('res').textContent = window.innerWidth;
 
@@ -17,63 +17,69 @@
     </script>
     <style>
         body {
-            background-color: #507ace;
-            color: #474747;
+            background-color: #fdfcfc;
+            color: #000000;
         }
-        
+        /*
         img {
             width: 100%;
-        }
+        }*/
         
         header,
         article,
         aside,
         footer {
-            border: 1px solid #000;
             box-sizing: border-box;
         }
         
-        @media(min-width:200x) {
-            body {
-                background-color: #059b4a;
-            }
-            article {
-                float: left;
-                width: 70%;
-            }
-            aside {
-                float: right;
-                width: 30%;
-            }
-            footer {
-                clear: both;
-            }
-            img {
-                width: 50%;
-            }
+        .circular--squareP {
+            border-radius: 50%;
+        }
+        
+        img {
+            max-width: 50%;
+            max-height: 50%;
+        }
+        
+        .wrap {
+            max-width: 960px;
+            margin: auto;
+            padding: 1em;
         }
     </style>
 </head>
 
-<body>
+<body style="background-color: #d4148e;">
     <header>
-        <h1>響應式網頁實作</h1>
-        <p>隨便寫</p>
-        <p>有嗎</p>
-        <p>有改嗎</p>
+        <center>
+            <h1>沒有眉毛才夠亞</h1>
+            <img class="circular--squareP" src="C:\Users\user\OneDrive\桌面\final\IMG_5743.jpg" alt="作者" width="250px">
+        </center>
     </header>
 
     <article>
-        <img src="https://pic.pimg.tw/funfunmeme/1621408698-3480647688-g_n.png" alt="封面照">
+        <section style="background-color:#ffffff;">
+            <!-- <img src="https://pic.pimg.tw/funfunmeme/1621408698-3480647688-g_n.png" alt="封面照">-->
+            <center>
+                <h2>------作品集------</h2>
 
-        <h3>內文</h3>
-        <p>佈局會根據設備的尺寸和功能而改變，例如</p>
-        <h3>更多內容</h3>
-        <u1>
-            <li>1</li>
-            <li>2</li>
-            <li>3</li>
-        </u1>
+                <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                <p>對稱</p>
+                <img src="C:\Users\user\OneDrive\桌面\final\26852.jpg" alt="對稱">
+                <img src="C:\Users\user\OneDrive\桌面\final\2685234552.jpg" alt="對稱">
+                <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                <p>LoveDeath+Robort-TheWitness</p>
+                <div class="wrap">
+                    <img src="C:\Users\user\OneDrive\桌面\final\愛.jpg" alt="愛死機">
+                    <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                    <p>虎年賀卡</p>
+                    <img src="C:\Users\user\OneDrive\桌面\final\ck4d83.jpg" alt="虎年賀卡">
+                    <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                    <p>幫朋友畫的商品</p>
+                    <img src="C:\Users\user\OneDrive\桌面\final\jhgcfjd.jpg" alt="sun003">
+                </div>
+            </center>
+        </section>
     </article>
 
     <aside>
