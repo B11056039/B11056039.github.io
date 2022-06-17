@@ -6,7 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>沒有眉毛才夠亞</title>
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="burger.css" />
+    <script src="burger.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <!--span id="res"></span-->
     <script>
         document.getElementById('res').textContent = window.innerWidth;
@@ -26,10 +29,16 @@
         }*/
         
         header,
+        nav,
         article,
         aside,
         footer {
             box-sizing: border-box;
+        }
+        
+        section {
+            min-height: 700px;
+            padding-top: 60px;
         }
         
         .circular--squareP {
@@ -50,53 +59,78 @@
 </head>
 
 <body style="background-color: #d4148e;">
-    <header>
-        <center>
-            <h1>沒有眉毛才夠亞</h1>
-            <img class="circular--squareP" src="https://github.com/B11056039/B11056039.github.io/blob/main/final/IMG_5743.jpg" alt="作者" width="250px">
-        </center>
-    </header>
+    <nav id="navbar-example2" class="navbar navbar-light navbar fixed-top px-3 style=background-color:#d4146e;">
+        <a class="navbar-brand" href="#"><b>Menu</b></a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading1"><b>Home</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading2"><b>Digital Art</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#scrollspyHeading3"><b>Graffiti</b></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/jie_097"><b>Twitter</b></a>
+            </li>
+        </ul>
+    </nav>
 
-    <article>
-        <section style="background-color:#ffffff;">
-            <!-- <img src="https://pic.pimg.tw/funfunmeme/1621408698-3480647688-g_n.png" alt="封面照">-->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <header>
             <center>
-                <h2>------作品集------</h2>
-
-                <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
-                <p>對稱</p>
-                <img src="C:\Users\user\OneDrive\桌面\final\26852.jpg" alt="對稱">
-                <img src="C:\Users\user\OneDrive\桌面\final\2685234552.jpg" alt="對稱">
-                <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
-                <p>LoveDeath+Robort-TheWitness</p>
-                <div class="wrap">
-                    <img src="C:\Users\user\OneDrive\桌面\final\愛.jpg" alt="愛死機">
-                    <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
-                    <p>虎年賀卡</p>
-                    <img src="C:\Users\user\OneDrive\桌面\final\ck4d83.jpg" alt="虎年賀卡">
-                    <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
-                    <p>幫朋友畫的商品</p>
-                    <img src="C:\Users\user\OneDrive\桌面\final\jhgcfjd.jpg" alt="sun003">
-                </div>
+                <h1 id="scrollspyHeading1">沒有眉毛才夠亞</h1>
+                <img class="circular--squareP" src="../final/img/IMG_5743.jpg" alt="作者" width="250px">
+                <p></p>
             </center>
-        </section>
-    </article>
+        </header>
 
-    <aside>
-        <h2>連假放假天</h2>
+        <article>
+            <section style="background-color:#ffffff;">
+                <!-- <img src="https://pic.pimg.tw/funfunmeme/1621408698-3480647688-g_n.png" alt="封面照">-->
+                <center>
+                    <h2 id="scrollspyHeading2">------作品集------</h2>
+                    <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                    <p>對稱</p>
+                    <img src="../final/img/26852.jpg" alt="對稱">
+                    <img src="../final/img/2685234552.jpg" alt="對稱">
+                    <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                    <p>LoveDeath+Robort-TheWitness</p>
+                    <div class="wrap">
+                        <img src="../final/img/愛.jpg" alt="愛死機">
+                        <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                        <p>虎年賀卡</p>
+                        <img src="../final/img/ck4d83.jpg" alt="虎年賀卡">
+                        <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                        <p>幫朋友畫的商品</p>
+                        <img src="../final/img/jhgcfjd.jpg" alt="sun003">
+                        <p>✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰ ⋱✮⋰</p>
+                        <p>1313</p>
+                        <img src="../final/img/13.13.jpg" alt="1313">
 
-        <nav>
-            <ul>
-                <li>4/1</li>
-                <li>4/2</li>
-                <li>4/3</li>
-                <li>4/4</li>
-                <li>4/5</li>
-            </ul>
-        </nav>
-    </aside>
+                        <h2 id="scrollspyHeading3">------塗鴉------</h2>
+                        <p>❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…</p>
+                        <img src="../final/img/wu0 g3.jpg" alt="1">
+                        <p>❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…</p>
+                        <img src="../final/img/IMG_6370.jpg" alt="2">
+                        <p>❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…</p>
+                        <img src="../final/img/BF773C4B-C76A-4760-B96A-B24F8CD49A86.jpg" alt="3">
+                        <p>❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…</p>
+                        <img src="../final/img/塔吐3.jpg" alt="4">
+                        <p>❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…❤…</p>
+                        <img src="../final/img/IMG_5744.jpg" alt="5">
+                    </div>
+                </center>
+            </section>
+        </article>
+    </div>
 
-    <footer>結尾</footer>
+    <footer>
+        <center>
+            <h1>謝謝觀賞!</h>
+        </center>
+    </footer>
 </body>
 
 </html>
